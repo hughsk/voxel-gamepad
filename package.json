@@ -1,0 +1,37 @@
+{
+  "name": "voxel-gamepad",
+  "version": "0.0.1",
+  "description": "Adds gamepad support for voxel.js using the HTML5 Gamepad API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/beefy demo.js:bundle.js -b node_modules/.bin/browserify",
+    "build": "node_modules/.bin/browserify demo.js -o bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/voxel-gamepad.git"
+  },
+  "keywords": [
+    "voxel",
+    "gamepad",
+    "api",
+    "html5",
+    "controller",
+    "fps"
+  ],
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughskennedy.com/)",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "gp-controls": "0.0.0"
+  },
+  "devDependencies": {
+    "beefy": "~0.4.0",
+    "browserify": "~2.22.0",
+    "voxel": "~0.3.1",
+    "voxel-highlight": "0.0.9",
+    "voxel-player": "~0.1.0",
+    "voxel-engine": "~0.18.2",
+    "voxel-walk": "0.0.5"
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Voxel Hello World</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+      body {
+        font-family: Monospace;
+        font-size: 12px;
+        background-color: #f0f0f0;
+        margin: 0px;
+        overflow: hidden;
+      }
+      #container {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+      }
+      #crosshair {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin: -16px 0 0 -16px;
+        width: 32px;
+        height: 32px;
+      }
+
+      #stats { bottom: 0px; right: 0px; }
+      .bar-tab { right: 33% !important; left: 33% !important; }
+      .logo {position: absolute; top: 5px; left: 5px; }
+      .errorMessage { text-align: center; width: 200px; margin: 20px auto; }
+
+      #notice {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        padding: 1em;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        font-weight: bold;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        max-width: 300px;
+        line-height: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="notice">Loading...</div>
+    <div id="container"></div>
+    <div id="crosshair"><img src="crosshair.png"/></div>
+    <script type="text/javascript" src="bundle.js"></script>
+  </body>
+</html>
